@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3757044F2510B8A6007CE4FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3757044E2510B8A6007CE4FD /* AppDelegate.swift */; };
-		375704512510B8A6007CE4FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375704502510B8A6007CE4FD /* SceneDelegate.swift */; };
 		375704532510B8A6007CE4FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375704522510B8A6007CE4FD /* ViewController.swift */; };
-		375704562510B8A6007CE4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375704542510B8A6007CE4FD /* Main.storyboard */; };
 		375704582510B8A7007CE4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375704572510B8A7007CE4FD /* Assets.xcassets */; };
 		3757045B2510B8A7007CE4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375704592510B8A7007CE4FD /* LaunchScreen.storyboard */; };
 		7FDFB4D2D65EB737AE573E7D /* Pods_GifAndVideoLoopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5635B642088472011456E4A /* Pods_GifAndVideoLoopTests.framework */; };
@@ -19,9 +17,7 @@
 /* Begin PBXFileReference section */
 		3757044B2510B8A6007CE4FD /* GifAndVideoLoopTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifAndVideoLoopTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3757044E2510B8A6007CE4FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		375704502510B8A6007CE4FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		375704522510B8A6007CE4FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		375704552510B8A6007CE4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		375704572510B8A7007CE4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3757045A2510B8A7007CE4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3757045C2510B8A7007CE4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,9 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				3757044E2510B8A6007CE4FD /* AppDelegate.swift */,
-				375704502510B8A6007CE4FD /* SceneDelegate.swift */,
 				375704522510B8A6007CE4FD /* ViewController.swift */,
-				375704542510B8A6007CE4FD /* Main.storyboard */,
 				375704572510B8A7007CE4FD /* Assets.xcassets */,
 				375704592510B8A7007CE4FD /* LaunchScreen.storyboard */,
 				3757045C2510B8A7007CE4FD /* Info.plist */,
@@ -88,7 +82,6 @@
 				B20F680D13D8B0ED99F99849 /* Pods-GifAndVideoLoopTests.debug.xcconfig */,
 				F4852737D5C3AAA876BB0139 /* Pods-GifAndVideoLoopTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,7 +147,6 @@
 			files = (
 				3757045B2510B8A7007CE4FD /* LaunchScreen.storyboard in Resources */,
 				375704582510B8A7007CE4FD /* Assets.xcassets in Resources */,
-				375704562510B8A6007CE4FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,21 +201,12 @@
 			files = (
 				375704532510B8A6007CE4FD /* ViewController.swift in Sources */,
 				3757044F2510B8A6007CE4FD /* AppDelegate.swift in Sources */,
-				375704512510B8A6007CE4FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		375704542510B8A6007CE4FD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				375704552510B8A6007CE4FD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		375704592510B8A7007CE4FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JU94JLHKNT;
 				INFOPLIST_FILE = GifAndVideoLoopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JU94JLHKNT;
 				INFOPLIST_FILE = GifAndVideoLoopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
