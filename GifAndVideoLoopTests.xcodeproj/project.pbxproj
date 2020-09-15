@@ -13,6 +13,7 @@
 		375704562510B8A6007CE4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375704542510B8A6007CE4FD /* Main.storyboard */; };
 		375704582510B8A7007CE4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375704572510B8A7007CE4FD /* Assets.xcassets */; };
 		3757045B2510B8A7007CE4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375704592510B8A7007CE4FD /* LaunchScreen.storyboard */; };
+		7FDFB4D2D65EB737AE573E7D /* Pods_GifAndVideoLoopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5635B642088472011456E4A /* Pods_GifAndVideoLoopTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		375704572510B8A7007CE4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3757045A2510B8A7007CE4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3757045C2510B8A7007CE4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20F680D13D8B0ED99F99849 /* Pods-GifAndVideoLoopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifAndVideoLoopTests.debug.xcconfig"; path = "Target Support Files/Pods-GifAndVideoLoopTests/Pods-GifAndVideoLoopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5635B642088472011456E4A /* Pods_GifAndVideoLoopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifAndVideoLoopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4852737D5C3AAA876BB0139 /* Pods-GifAndVideoLoopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifAndVideoLoopTests.release.xcconfig"; path = "Target Support Files/Pods-GifAndVideoLoopTests/Pods-GifAndVideoLoopTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDFB4D2D65EB737AE573E7D /* Pods_GifAndVideoLoopTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A8620962FC6B084D9D8234F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5635B642088472011456E4A /* Pods_GifAndVideoLoopTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		375704422510B8A6007CE4FD = {
 			isa = PBXGroup;
 			children = (
 				3757044D2510B8A6007CE4FD /* GifAndVideoLoopTests */,
 				3757044C2510B8A6007CE4FD /* Products */,
+				84B10F4AD46B934D1F3BF321 /* Pods */,
+				2A8620962FC6B084D9D8234F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = GifAndVideoLoopTests;
 			sourceTree = "<group>";
 		};
+		84B10F4AD46B934D1F3BF321 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B20F680D13D8B0ED99F99849 /* Pods-GifAndVideoLoopTests.debug.xcconfig */,
+				F4852737D5C3AAA876BB0139 /* Pods-GifAndVideoLoopTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3757045F2510B8A7007CE4FD /* Build configuration list for PBXNativeTarget "GifAndVideoLoopTests" */;
 			buildPhases = (
+				84191D6CE5447F08A62D9A0E /* [CP] Check Pods Manifest.lock */,
 				375704472510B8A6007CE4FD /* Sources */,
 				375704482510B8A6007CE4FD /* Frameworks */,
 				375704492510B8A6007CE4FD /* Resources */,
+				F602F51AEDF985DD833D1A3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84191D6CE5447F08A62D9A0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifAndVideoLoopTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F602F51AEDF985DD833D1A3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifAndVideoLoopTests/Pods-GifAndVideoLoopTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifAndVideoLoopTests/Pods-GifAndVideoLoopTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifAndVideoLoopTests/Pods-GifAndVideoLoopTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		375704472510B8A6007CE4FD /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		375704602510B8A7007CE4FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20F680D13D8B0ED99F99849 /* Pods-GifAndVideoLoopTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		375704612510B8A7007CE4FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4852737D5C3AAA876BB0139 /* Pods-GifAndVideoLoopTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
