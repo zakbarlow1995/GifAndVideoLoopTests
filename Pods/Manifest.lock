@@ -1,16 +1,20 @@
 PODS:
   - FLAnimatedImage (1.0.12)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - FLAnimatedImage (~> 1.0)
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - FLAnimatedImage
+    - SnapKit
 
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 7b36831844255d986de46eaaeb5d76f004ec3a13
+PODFILE CHECKSUM: b25b93cf7b61bb23a8ebdb83b19ed187d9668dc3
 
 COCOAPODS: 1.9.1

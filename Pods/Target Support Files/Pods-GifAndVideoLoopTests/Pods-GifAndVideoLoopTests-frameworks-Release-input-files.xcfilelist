@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-GifAndVideoLoopTests/Pods-GifAndVideoLoopTests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
